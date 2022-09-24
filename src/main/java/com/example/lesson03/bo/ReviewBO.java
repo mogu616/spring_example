@@ -18,4 +18,18 @@ public class ReviewBO {
 	public Review getReviewById(int id) {
 		return reviewDAO.selectReviewById(id);
 	}
+	
+	// return int : 인서트가 성공한 행의 개수
+	public int addReview(Review review) {
+		return reviewDAO.insertReview(review);
+	}
+	
+//	addReviewAsField(4, "콤비네이션R", "포양", 5.0, "맛있네영")
+	public int addReviewAsField(int storeId, String name, String userName, Double point, String review) {
+		return reviewDAO.insertReviewAsField(storeId, name, userName, point, review);
+	}
+	
+	public int updateReviewById(int id, String review) {
+		return reviewDAO.updateReviewById(id, review);
+	}
 }
