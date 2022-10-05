@@ -18,15 +18,15 @@
 		<form method="post" action="/lesson06/ex01/add_user">
 			<div class="form-group">
 				<label for="name"><b>이름</b></label>
-				<input type="text" id="name" name="name" class="form-control col-3" placeholder="이름을 입력하세요">
+				<input type="text" id="name" name="name" class="form-control" placeholder="이름을 입력하세요">
 			</div>
 			<div class="form-group">
 				<label for="yyyymmdd"><b>생년월일</b></label>
-				<input type="text" id="yyyymmdd" name="yyyymmdd" class="form-control col-3" placeholder="예) 20000616">
+				<input type="text" id="yyyymmdd" name="yyyymmdd" class="form-control" placeholder="예) 20000616">
 			</div>
 			<div class="form-group">
 				<label for="email"><b>이메일</b></label>
-				<input type="text" id="email" name="email" class="form-control col-3" placeholder="이메일">
+				<input type="text" id="email" name="email" class="form-control" placeholder="이메일">
 			</div>
 			<div class="form-group">
 				<label for="introduce"><b>자기소개</b></label>
@@ -34,7 +34,7 @@
 			</div>
 			
 			<%-- ajax 사용할 때는 type을 반드시 button으로 한다. --%>
-			<input type="button" id="addBtn" class="btn btn-success" value="회원가입">
+			<input type="button" id="addBtn" class="btn btn-info" value="회원가입">
 		</form>
 	</div>
 
