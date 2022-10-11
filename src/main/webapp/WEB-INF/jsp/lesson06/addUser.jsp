@@ -102,16 +102,21 @@ $(document).ready(function() {
 			return;
 		}
 		
+		let introduce = $('#introduce').val();
+		
 		// 서버에 전송 AJAX: 폼태그와 상관없이 비동기로 별도 요청(request)
 		$.ajax({
 			// request
-			type:"post"		// method 방식
+			type:"POST"		// method 방식
 			, url:"/lesson06/ex01/add_user" // 요청 주소
 			, data:{"name":name, "yyyymmdd":yyyymmdd, "email":email, "introduce":introduce}
 			
 			// response
 			, success: function(data) {
 				alert(data);
+			}
+			, complete: function(data) {
+				alert("완료");
 			}
 			, error: function(e) {
 				alert("에러" + e);
