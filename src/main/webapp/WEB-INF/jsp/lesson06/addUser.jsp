@@ -113,7 +113,10 @@ $(document).ready(function() {
 			
 			// response
 			, success: function(data) {
-				alert(data);
+			//	alert(data);
+				if (data == "success") {
+					location.href = "/lesson06/ex01/get_user_view"
+				} 
 			}
 			, complete: function(data) {
 				alert("완료");
